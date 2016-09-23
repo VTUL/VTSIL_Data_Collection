@@ -1,0 +1,17 @@
+﻿#DAQ configuration set-up description
+#All lines begin with a special identifier for a values
+#	1; set sample rate
+#	2; length in seconds of each file produced
+#	3; the total number of sample data stored in one file from one channel
+#	4; Move Path —> set the path where collection files are stored locally, NOTE: need quotes around path and \\ instead of \.
+#	5; Store all channel data --> bool to specify to store all channel data, or just channels with sensors, value: 1 to store all, value 0: only with sensors
+#	6; Display records to be collected on DAQ --> this will show how many records are currently on the DAQ. This is good for monitoring if the records are being produced faster than can be collected and processed. This shows if the collection program can keep up with the DAQ.
+#
+#	DAQ --> begin of configuration parameters for DAQ
+DAQ
+1;640
+2;10
+3;10000
+4;D:\\data\\
+5;0
+6;1
